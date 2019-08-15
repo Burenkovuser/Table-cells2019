@@ -8,13 +8,42 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    
+    
+    let cellTableViewIdentifier = "CellTableIdentifier"
+    @IBOutlet var tableView: UITableView!
+    
+    let computers = [
+        ["Name": "Macbook Air", "Color": "Silver"],
+        ["Name": "Macbook Pro", "Color": "Silver"],
+        ["Name": "iMac", "Color": "Silver"],
+        ["Name": "Mac Mini", "Color": "Silver"],
+         ["Name": "Macbook Pro", "Color": "Black"]
+        
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        tableView.register(NameAndColorCell.self, forCellReuseIdentifier: cellTableViewIdentifier)
     }
 
+    // MARK: - Table View Data Source Methods
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return computers.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellTableViewIdentifier, for: indexPath) as! NameAndColorCell
+        
+        let rowData = computers[indexPath.row]
+        cell.name  = rowData["Name"]! //по ключу Name
+        cell.color = rowData["Color"]!
+        
+        return cell
+    }
 
 }
 
