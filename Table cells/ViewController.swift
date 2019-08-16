@@ -27,6 +27,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(NameAndColorCell.self, forCellReuseIdentifier: cellTableViewIdentifier)
+        let xib = UINib(nibName: "NameAndColorCell", bundle: nil)
+        tableView.register(xib, forCellReuseIdentifier: cellTableViewIdentifier)
+        tableView.rowHeight = 65
     }
 
     // MARK: - Table View Data Source Methods

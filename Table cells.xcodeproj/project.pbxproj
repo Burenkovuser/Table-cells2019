@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB03DB492305089A00648BC6 /* NameAndColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03DB482305089A00648BC6 /* NameAndColorCell.swift */; };
+		FB88A38623063F9F009ED040 /* NameAndColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB88A38523063F9F009ED040 /* NameAndColorCell.xib */; };
 		FBBC7C202304FE7500499859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC7C1F2304FE7500499859 /* AppDelegate.swift */; };
 		FBBC7C222304FE7600499859 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC7C212304FE7600499859 /* ViewController.swift */; };
 		FBBC7C252304FE7600499859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC7C232304FE7600499859 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		FB03DB482305089A00648BC6 /* NameAndColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameAndColorCell.swift; sourceTree = "<group>"; };
+		FB88A38523063F9F009ED040 /* NameAndColorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NameAndColorCell.xib; sourceTree = "<group>"; };
 		FBBC7C1C2304FE7500499859 /* Table cells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table cells.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBC7C1F2304FE7500499859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBBC7C212304FE7600499859 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				FBBC7C1F2304FE7500499859 /* AppDelegate.swift */,
 				FBBC7C212304FE7600499859 /* ViewController.swift */,
 				FB03DB482305089A00648BC6 /* NameAndColorCell.swift */,
+				FB88A38523063F9F009ED040 /* NameAndColorCell.xib */,
 				FBBC7C232304FE7600499859 /* Main.storyboard */,
 				FBBC7C262304FE7700499859 /* Assets.xcassets */,
 				FBBC7C282304FE7700499859 /* LaunchScreen.storyboard */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB88A38623063F9F009ED040 /* NameAndColorCell.xib in Resources */,
 				FBBC7C2A2304FE7700499859 /* LaunchScreen.storyboard in Resources */,
 				FBBC7C272304FE7700499859 /* Assets.xcassets in Resources */,
 				FBBC7C252304FE7600499859 /* Main.storyboard in Resources */,
